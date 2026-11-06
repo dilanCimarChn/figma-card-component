@@ -62,3 +62,11 @@ body{
     background-color: #cde1ed;
     border-color: transparent ;
 }
+
+/* Keep the visual exercise usable on narrow screens and with keyboard input. */
+body { min-height: 100svh; height: auto; padding: 4rem 1rem 1rem; }
+.card { width: min(353px, 100%); }
+.section-button { display: flex; gap: .5rem; }
+.card button:nth-child(1) { width: auto; flex: 1; margin: 0; }
+.card button:nth-child(2) { flex: 0 0 3.25rem; }
+.card button:focus-visible { outline: 3px solid #046ba5; outline-offset: 3px; }
